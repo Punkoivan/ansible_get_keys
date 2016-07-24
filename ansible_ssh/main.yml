@@ -1,0 +1,6 @@
+---
+- name: adding ssh keys
+  hosts: all
+  roles:
+   - ssh_key_add 
+#Created by Punko <Punkoivan@yandex.ru> 10.07.16

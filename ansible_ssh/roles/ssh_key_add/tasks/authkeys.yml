@@ -1,0 +1,9 @@
+- name: Add authorized keys 
+  authorized_key:
+   key: "{{ keys }}"
+   exclusive: no
+   path: /home/"{{user_for_keys}}"/.ssh/authorized_keys
+   state: present
+   user: "{{ansible_ssh_user}}"
+   manage_dir: no
+#Created by Punko <Punkoivan@yandex.ru> 10.02.16

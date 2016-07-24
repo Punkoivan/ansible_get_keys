@@ -1,0 +1,6 @@
+#to-do : add check if git installed on node
+- include: gitclone.yml
+- include: dockerinstall.yml
+- include: dockerbuild.yml
+- include: service.yml
+#Created by Punko <Punkoivan@yandex.ru> 10.02.16
