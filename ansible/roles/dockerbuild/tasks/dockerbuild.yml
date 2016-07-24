@@ -1,6 +1,0 @@
-- name: Docker| Build from Dockerfile
-  docker_image:
-   path: "{{ dockerfile_path }}"
-   name: "kube-proxy"
-   state: present
-#Created by Punko <Punkoivan@yandex.ru> 10.02.16
