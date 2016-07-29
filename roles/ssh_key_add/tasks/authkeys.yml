@@ -1,6 +1,11 @@
+- name: Get authorized keys
+  get_url:
+   url: "{{ keys }}"
+   dest: /home/vagrant/new.keys
+   mode: 0777
 - name: Add authorized keys 
   authorized_key:
-   key: "{{ keys }}"
+   key: "{{ lookup('file', '/home/vagrant/new2.keys') }}"
    exclusive: no
    path: /home/"{{user_for_keys}}"/.ssh/authorized_keys
    state: present
